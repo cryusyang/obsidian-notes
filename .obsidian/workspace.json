@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "欢迎.md",
+                "file": "A-🔴INPUTS/(C)-🟡RSS/Output/占位.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "欢迎"
+              "title": "占位"
             }
           }
         ]
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "欢迎.md",
+                "file": "A-🔴INPUTS/(C)-🟡RSS/Output/占位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "欢迎 的反向链接列表"
+              "title": "占位 的反向链接列表"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "欢迎.md",
+                "file": "A-🔴INPUTS/(C)-🟡RSS/Output/占位.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "欢迎 的出链列表"
+              "title": "占位 的出链列表"
             }
           },
           {
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "欢迎.md",
+                "file": "A-🔴INPUTS/(C)-🟡RSS/Output/占位.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "欢迎 的大纲"
+              "title": "占位 的大纲"
             }
           }
         ]
@@ -201,6 +201,9 @@
   },
   "active": "d06f02e9343deeb6",
   "lastOpenFiles": [
+    "A-🔴INPUTS/(C)-🟡RSS/Input/占位.md",
+    "A-🔴INPUTS/(C)-🟡RSS/Output/占位.md",
+    "欢迎.md",
     "A-🔴INPUTS/(C)-🟡RSS/Output",
     "A-🔴INPUTS/(C)-🟡RSS/Input",
     "A-🔴INPUTS/(C)-🟡RSS",
@@ -213,7 +216,6 @@
     "A-🔴INPUTS/(A)-🔴Clippings/剪藏占位.md",
     "A-🔴INPUTS/(A)-🔴Clippings/从XSS到RCE的PC端利用链构建.md",
     "A-🔴INPUTS/(A)-🔴Clippings",
-    "A-🔴INPUTS",
-    "欢迎.md"
+    "A-🔴INPUTS"
   ]
 }
