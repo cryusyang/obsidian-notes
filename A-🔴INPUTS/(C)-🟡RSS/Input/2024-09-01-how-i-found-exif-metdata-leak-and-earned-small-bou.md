@@ -1,0 +1,18 @@
+---
+title: "How I found exif metdata leak and earned small bounty"
+url: "https://medium.com/@deepk007/how-i-found-exif-metdata-leak-and-earned-small-bounty-34c93de2fa2e?source=rss-1646886baef5------2"
+source: "DEep"
+date: 2024-09-01
+fetched: 2026-05-05
+language: en
+read: false
+archived: false
+tags: []
+---
+
+> [!example] AI 摘要
+> 本文作者分享了自己在漏洞赏金计划中发现EXIF元数据泄露漏洞的过程与方法。他介绍了EXIF元数据的定义及其潜在风险（如泄露拍摄时间、设备型号、GPS位置等敏感信息），并详细说明了如何通过上传含EXIF信息的图片、使用EXIF查看工具（如浏览器插件或在线工具）检测目标网站是否未剥离原始元数据来识别该漏洞。最终，作者成功复现并提交了该漏洞，获得小额赏金。
+
+---
+
+<p>Hellooo hackers 👋👋 I hope you are doing well. In this blog I’m gonna tell you how I found exif metadata leak and earn a little dollar bounty 💲💲</p><p><strong>Story begins here:</strong></p><p>One day was hunting on a bug bounty program and I couldn’t find anything as I’ve spent almost three or four days. So, that time one of my <a href="https://medium.com/@digant_15">colleague</a> told me about the exif metadata leak vulnerability. Also he gave me methodology to hunt for this vulnerability.</p><p>So, today l’m gonna tell you how you can also hunt this vulnerability.</p><p>First of all let’s understand what is exif metadata according to chatgpt : )</p><p>EXIF metadata (Exchangeable Image File Format) is information embedded in image files, typically captured by digital cameras or smartphones. It includes details like the date and time the photo was taken, camera settings (such as shutter speed, aperture, and ISO), GPS location, and even the device model used. This metadata helps in organizing, editing, and understanding the context of images, but it can also reveal sensitive information, like the location where a photo was taken, so it’s often important to review or remove it before sharing images online.</p><p>I hope you understand that.</p><p>So, now let’s hunt for the vulnerability.</p><p>First of all when you see any image upload functionality that time try uploading image which has already exif metadata in there.</p><p><a href="https://github.com/ianare/exif-samples/tree/master/jpg">Here</a> you can download images like that.</p><p>Second steps you can do that is that after uploding the image, opens it in the new tab and then copy the URL of the image and paste it in the jimple.com or you can basically install the extension called exif viewer pro.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*iiw-nk1qsEEJkO8T5ZDj3g.jpeg" /></figure><p>Now after installing the extension, all you have to do is the right click on the image.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/539/1*AO4K1DFmO-WxXVIbHCPLWg.jpeg" /></figure><p>There you will see show exif data as shown in the above image. Now when you click on that you will see the information which are being stored in the image.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/361/1*RxX3_r5UtpILeFNN7DmjfA.jpeg" /></figure><p>If the same information you are seeing on the web application when you upload this kind of image. So congratulations 👏 👏 you found the exif metadata vulnerability.</p><p>I did the same process which I mentioned above, then make the poc of it and reported it and got small bounty from that.</p><p>I hope you learned something new from this blog. If you learned or liked my blog you can show some love by hitting clap 👏 👏 👏 button as many times as you want ; )</p><p>Here is my <a href="https://www.linkedin.com/in/deep-kachhadiya-aa8271310/">Linkedin</a>.</p><p>Meet you with the new writeup, Happy Hacking ❤️❤️🙌🙌</p><img alt="" height="1" src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=34c93de2fa2e" width="1" />
