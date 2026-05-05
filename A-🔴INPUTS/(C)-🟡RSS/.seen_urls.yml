@@ -137,6 +137,12 @@ urls:
 - https://medium.com/@jud.brewer/the-generosity-paradox-why-your-brain-cant-tell-the-difference-between-giving-and-getting-f8fb05cb976d?source=rss-854c87137ada------2
 - https://medium.com/@jud.brewer/the-less-you-know-the-more-you-say-b47bc1cbc66c?source=rss-854c87137ada------2
 - https://medium.com/@jud.brewer/the-part-of-burnout-nobody-wants-to-talk-about-2d258f40c671?source=rss-854c87137ada------2
+- https://medium.com/@red_darkin/a-real-ssrf-story-from-hackerone-featuring-ipv6-redirects-9aa5e2ad8c2e?source=rss-a40f7d301d8e------2
+- https://medium.com/@red_darkin/dom-xss-via-an-alternative-prototype-pollution-vector-portswigger-lab-a616f616b91a?source=rss-a40f7d301d8e------2
+- https://medium.com/@red_darkin/how-i-found-a-critical-bug-using-claude-desktop-free-a626e8f3ed67?source=rss-a40f7d301d8e------2
+- https://medium.com/@red_darkin/how-to-replicate-jenkins-cve-2024-23897-arbitrary-file-read-vulnerability-260c8174dd94?source=rss-a40f7d301d8e------2
+- https://medium.com/@red_darkin/p1-bug-leaked-zendesk-token-in-github-46e97b734e8d?source=rss-a40f7d301d8e------2
+- https://medium.com/@red_darkin/reflected-cross-site-scripting-in-hidden-input-field-0c8bf8fa43f9?source=rss-a40f7d301d8e------2
 - https://medium.com/@zack0x01_/%EF%B8%8F-how-i-found-300-web3-users-2fa-secrets-using-just-one-recon-command-13fa202393e0?source=rss-b4279f5724bf------2
 - https://medium.com/@zack0x01_/business-logic-vulnerability-lead-to-pii-theft-account-take-over-b5b68a679c19?source=rss-b4279f5724bf------2
 - https://medium.com/@zack0x01_/find-xss-on-the-fly-full-guide-300f07fb86ae?source=rss-b4279f5724bf------2
