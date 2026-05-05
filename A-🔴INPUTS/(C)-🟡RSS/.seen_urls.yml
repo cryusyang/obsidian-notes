@@ -106,6 +106,10 @@ urls:
 - https://influencepeople.biz/why-faith-shapes-how-we-influence-even-at-work/
 - https://influencepeople.biz/why-who-youre-with-shapes-what-you-experience/
 - https://influencepeople.biz/will-the-truth-set-you-free/
+- https://infosecwriteups.com/1-500-bounty-business-logic-flaw-in-project-secrets-management-4b985175071e?source=rss-502c7a93b835------2
+- https://infosecwriteups.com/800-bounty-privilege-escalation-via-api-from-scheduler-to-team-admin-810bb8401a0f?source=rss-502c7a93b835------2
+- https://infosecwriteups.com/how-a-newline-injection-in-folder-names-broke-access-revocation-750-bug-f9a73a8cd978?source=rss-502c7a93b835------2
+- https://infosecwriteups.com/how-a-simple-race-condition-vulnerability-down-a-saas-global-platform-8093528b403f?source=rss-502c7a93b835------2
 - https://infosecwriteups.com/how-i-made-16-500-hacking-cdn-caching-servers-part-2-4995ece4c6e6?source=rss-7c6bece313a1------2
 - https://infosecwriteups.com/how-i-made-16-500-hacking-cdn-caching-servers-part-3-91f9d836e046?source=rss-7c6bece313a1------2
 - https://medium.com/@0xoroot/bypassing-email-uniqueness-check-a-logic-flaw-disrupting-password-recovery-95464c95b664?source=rss-ef0c2df05c49------2
@@ -117,6 +121,10 @@ urls:
 - https://medium.com/@MoSalah11/a-critical-zero-day-in-atlassian-jira-service-management-cloud-password-reset-account-takeover-1903cbb8bd31?source=rss-7083da697c19------2
 - https://medium.com/@MoSalah11/how-i-earned-from-html-injection-7b4da98ab6e3?source=rss-7083da697c19------2
 - https://medium.com/@MoSalah11/how-i-found-cache-deception-in-a-private-bug-bounty-program-0e3056d15858?source=rss-7083da697c19------2
+- https://medium.com/@a13h1/2-150-critical-authorization-bypass-viewer-to-admin-privilege-escalation-via-api-c2ef8974a1a5?source=rss-502c7a93b835------2
+- https://medium.com/@a13h1/500-bounty-unauthorized-folder-creation-with-null-name-67064bb18e4a?source=rss-502c7a93b835------2
+- https://medium.com/@a13h1/reflected-xss-in-parser-endpoint-366-bounty-earned-28ca95251ab2?source=rss-502c7a93b835------2
+- https://medium.com/@a13h1/unauthorized-access-to-enterprise-policies-management-500-bac-bug-60f04419fed4?source=rss-502c7a93b835------2
 - https://medium.com/@deepk007/how-focusing-on-a-single-bug-bounty-program-for-months-helped-me-find-critical-vulnerabilities-3581d3e32e38?source=rss-1646886baef5------2
 - https://medium.com/@deepk007/how-i-accidently-find-xss-b349a0721ec9?source=rss-1646886baef5------2
 - https://medium.com/@deepk007/how-i-bypassed-otp-in-unexpected-way-2d4b478db512?source=rss-1646886baef5------2
@@ -704,6 +712,8 @@ urls:
 - https://nesslabs.com/somatic-regulation?utm_source=rss&utm_medium=rss&utm_campaign=somatic-regulation
 - https://nesslabs.com/tether-featured-tool?utm_source=rss&utm_medium=rss&utm_campaign=tether-featured-tool
 - https://nesslabs.com/tiny-experiments-tedx-nashville-transcript?utm_source=rss&utm_medium=rss&utm_campaign=tiny-experiments-tedx-nashville-transcript
+- https://osintteam.blog/500-bac-bug-unauthorized-removal-of-private-pension-schemes-7710dc6bbc58?source=rss-502c7a93b835------2
+- https://osintteam.blog/email-disclosure-via-git-config-in-project-500-bounty-bug-ee057ca12e6f?source=rss-502c7a93b835------2
 - https://s41n1k.medium.com/a-faster-cheaper-api-testing-tool-for-modern-developers-apipeek-af019930c94c?source=rss-6bb88d45faec------2
 - https://s41n1k.medium.com/how-i-downloaded-all-bitbucket-repos-by-finding-a-leaked-token-in-a-js-file-for-4k-bounty-a701d6effa50?source=rss-6bb88d45faec------2
 - https://s41n1k.medium.com/how-i-found-a-critical-password-reset-bug-in-the-bb-program-and-got-4-000-a22fffe285e1?source=rss-6bb88d45faec------2
