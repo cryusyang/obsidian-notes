@@ -1,0 +1,18 @@
+---
+title: "Toxic HTB Challenge"
+url: "https://medium.com/@0xoroot/toxic-htb-challenge-163b9045e7ec?source=rss-ef0c2df05c49------2"
+source: "0xoroot"
+date: 2023-12-04
+fetched: 2026-05-05
+language: en
+read: false
+archived: false
+tags: []
+---
+
+> [!example] AI 摘要
+> 本文是一篇针对HTB（Hack The Box）靶机“Toxic”的渗透测试复盘，面向初学者讲解了完整的漏洞利用过程。攻击者通过分析前端文件发现后端使用Base64编码Cookie，并结合Burp Suite拦截并解码请求，定位到路径遍历漏洞；随后利用Nginx服务器特性，成功读取/var/log/nginx/access.log日志文件；再通过User-Agent头注入PHP命令执行（如ls -l/），发现flag文件名，最终构造Base64编码的恶意路径读取flag。文章强调理解Web服务器机制与持续尝试的重要性。
+
+---
+
+<p>Today, in the Write-Up, we’ll discuss the solution for Machine Toxic in HTB . It’s quite easy, but I wanted to provide a Write-Up as it can be very helpful for beginners. First, we started by running the machine and downloading existing files. Opening the first file, I found it contained HTML and CSS code, along with some images that are not currently necessary.</p><p>Amidst all this, I found backend code. Opening it, I understood its details, discovering that it encodes cookies using Base64 — a crucial piece of information.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/343/1*jIdlinVRVcXsh2XqfufmPA.jpeg" /></figure><p>Opening the website, with Burp running, we intercepted a request similar to the quiz. We decoded the encryption and checked the result.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/780/1*BDHFBYQLTCvP4IZ_5zN3bA.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*K8pJcyCH7ie8DP25AHrn8w.jpeg" /></figure><p>We found it led to a path named /www/index.html. Now, if we change the path to something else, will there be a result? I tried flag.txt, but there was no output.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/633/1*uKamAzqxEgWtXiBsF468-w.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*v_9ciC7vLnbGSpKhpdNaIQ.jpeg" /></figure><p>So, we attempted something else. Knowing that the web server is running Nginx,</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*owY_9tOh8VUaFjARCaLFWA.jpeg" /></figure><p>we tried to access logs by specifying the path /var/log/nginx/access.log.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/753/1*99d3qxwT3TqWRUaeXIDaqQ.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*ttrkvg1UtfyzmfACZtVNJw.jpeg" /></figure><p>We successfully reached the server logs. The next step was to find the filename “flag” by injecting an ls command, like so:<br />User-Agent: &lt;?php system(‘ls -l/’);?&gt;</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/837/1*T7ZcwOE35OHHU_u1VnWO7g.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/444/1*gv4QarrUclUrU8cQYYl5nQ.jpeg" /></figure><p>Change path to the name flag /flag_XXXXX and encryption to base 64 and send it</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/600/1*u8UJ7YtA3me7N8_tT3VGuQ.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/753/1*POSilHWG6o3ZgxB3Pu1i9Q.jpeg" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/753/1*hwSUDpjKbuqbPDBcGLF6Hw.jpeg" /></figure><p>And there, the flag appeared. This machine teaches us that you need to understand how everything works in a web server and be persistent in trying multiple times because things may not work perfectly on the first attempt.</p><p>I hope you benefited from this Write-Up. Thank you.</p><img alt="" height="1" src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=163b9045e7ec" width="1" />
