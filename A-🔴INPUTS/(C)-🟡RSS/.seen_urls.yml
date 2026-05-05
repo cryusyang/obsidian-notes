@@ -143,6 +143,16 @@ urls:
 - https://medium.com/@red_darkin/how-to-replicate-jenkins-cve-2024-23897-arbitrary-file-read-vulnerability-260c8174dd94?source=rss-a40f7d301d8e------2
 - https://medium.com/@red_darkin/p1-bug-leaked-zendesk-token-in-github-46e97b734e8d?source=rss-a40f7d301d8e------2
 - https://medium.com/@red_darkin/reflected-cross-site-scripting-in-hidden-input-field-0c8bf8fa43f9?source=rss-a40f7d301d8e------2
+- https://medium.com/@xelcezeri/beyond-the-apk-exploiting-misconfigured-firebase-databases-764c48e4fc80?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/breaking-the-walls-techniques-for-403-forbidden-bypass-c25034b822c6?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/broken-math-exploiting-business-logic-for-price-manipulation-ad52f1c47f3a?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/bypassing-email-verification-via-oauth-misconfiguration-cad488c15f2f?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/chaining-logic-flaws-from-kyc-bypass-to-authenticated-time-based-sqli-and-mass-idor-0425f362dad5?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/full-chain-exploitation-from-recon-to-blind-sqli-239eed0252a2?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/hidden-in-the-source-discovering-reflected-xss-via-manual-code-review-c2a697d9d8c1?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/open-redirect-to-xss-3a579bf64ed2?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/simple-endpoint-critical-impact-how-i-sabotaged-refunds-1cd0ac7a4cb2?source=rss-51d79a0d79bb------2
+- https://medium.com/@xelcezeri/the-multi-bug-streak-uncovering-4-vulnerabilities-on-a-single-target-1b4daa50dad2?source=rss-51d79a0d79bb------2
 - https://medium.com/@zack0x01_/%EF%B8%8F-how-i-found-300-web3-users-2fa-secrets-using-just-one-recon-command-13fa202393e0?source=rss-b4279f5724bf------2
 - https://medium.com/@zack0x01_/business-logic-vulnerability-lead-to-pii-theft-account-take-over-b5b68a679c19?source=rss-b4279f5724bf------2
 - https://medium.com/@zack0x01_/find-xss-on-the-fly-full-guide-300f07fb86ae?source=rss-b4279f5724bf------2
