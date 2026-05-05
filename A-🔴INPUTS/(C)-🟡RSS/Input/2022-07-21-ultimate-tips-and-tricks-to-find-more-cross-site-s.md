@@ -1,0 +1,18 @@
+---
+title: "Ultimate Tips And Tricks To Find More Cross-Site Scripting Vulnerabilities"
+url: "https://bxmbn.medium.com/ultimate-tips-and-tricks-to-find-more-cross-site-scripting-vulnerabilities-d2913765e2d5?source=rss-7c6bece313a1------2"
+source: "bombon"
+date: 2022-07-21
+fetched: 2026-05-05
+language: en
+read: false
+archived: false
+tags: []
+---
+
+> [!example] AI 摘要
+> 作者强调其XSS漏洞挖掘完全依赖手动方法，不使用自动化工具。建议初学者先通过CodeAcademy等平台扎实掌握HTML和JavaScript基础。实战中主要依靠Google Dorking（如按文件扩展名搜索子域名）和Wayback Machine（通过CDX API挖掘历史隐藏端点）来发现潜在XSS入口点。
+
+---
+
+<p>@bxmbn</p><p>I get a lot of questions on how I Find XSS, What is My “Methodology” , What Tools I use, etc.</p><p>I want to start by saying that all my Hunting is 100% Manual, I don’t use Automated Tools or Anything of the Nature.</p><p>If you are a Beginner, you probably want to start by Learning the Basics of HTML and JS</p><ul><li>Learn HTML and JS With <a href="https://www.codecademy.com/">CodeAcademy</a></li></ul><blockquote>When I was In High School, I wanted to Learn Web Development, I Learned The Basics of HTML And JS using CodeAcademy, Little Did I know that Learning the basics of Web Development would help Finding XSSes Later In Life</blockquote><p>If you know the Basics Already, I would pretty much recommend you to start hunting right away, and the first Tool that you want to use is the Google Search Bar, So that you start looking for Possible Vulnerable Endpoints</p><h3><strong>Google Dorking</strong></h3><p>I Learned How to use google dorks later on my Hunting Career, I really wish i read this Blog way back when I was starting</p><p>Google Dorking is pretty Easy</p><p>If you search for</p><p>site:*.google.com ext:php</p><p>You will get all google.com subdomains that have .php extension</p><p>If you see a parameter in the URL open it and start looking for any XSS</p><p>Some People Don’t Know that you can also use the Tool Button in Google to Search for older results using the custom range options</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*PWH8RSYVPNWPPNDgiXRwdQ.png" /></figure><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*Zhh15_8_G3sOtQPFUJ0GTw.png" /></figure><p>Dorks I always use</p><p>site:*.host.com ext:asp</p><p>site:*.host.com ext:jsp</p><p>site:*.host.com ext:aspx</p><p>site:*.host.com ext:jspx</p><p>site:*.host.com ext:do</p><p>site:*.host.com ext:action</p><p>site:*.host.com ext:php</p><h3><strong>Web Archive</strong></h3><p><a href="http://web.archive.org/cdx/search/cdx?url=google.com/api/*&amp;output=text&amp;fl=original&amp;collapse=urlkey&amp;from=">web.archive.org</a> is one of the best tools for finding XSS</p><p>Let’s say I want to search paths after <a href="http://web.archive.org/cdx/search/cdx?url=google.com/api/*&amp;output=text&amp;fl=original&amp;collapse=urlkey&amp;from=">google.com/api/</a>* all you have to do is using this URL</p><p><a href="http://web.archive.org/cdx/search/cdx?url=google.com/api/*&amp;output=text&amp;fl=original&amp;collapse=urlkey&amp;from=">http://web.archive.org/cdx/search/cdx?url=google.com/api/*&amp;output=text&amp;fl=original&amp;collapse=urlkey&amp;from=</a></p><figure><img alt="" src="https://cdn-images-1.medium.com/max/758/1*sPm13HvSBeFjnoW25KmG8A.png" /></figure><p>This will get you more hidden endpoints that you may not find when Google Dorking.</p><p>This is basically all I do, I try different extensions when google dorking and then use Web Archive for more hidden endpoints.</p><img alt="" height="1" src="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=d2913765e2d5" width="1" />
